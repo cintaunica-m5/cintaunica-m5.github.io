@@ -70,7 +70,7 @@ svg.grafico{width:100%;height:auto;display:block}
 <script>
 const H = 3600000;
 function ahora(){ return Date.now(); }
-const PAQUETE = {"plano":{"tramos":[],"generado":"2026-09-17T19:46:07.208Z"}};
+const PAQUETE = {"plano":{"tramos":[{"inicio":"2026-09-17T10:21:00.000Z","fin":"2026-09-17T23:21:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-01T16:15:00.000Z","fin":"2026-09-01T19:37:00.000Z","turno":3,"causa":"Cambio de turno"}],"generado":"2026-09-18T09:32:05.136Z"}};
 let db = {tramos:[]};
 function clave(d){ return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
 function desdeClave(s){ const p=String(s).split("-"); return new Date(+p[0], +p[1]-1, +p[2]); }
