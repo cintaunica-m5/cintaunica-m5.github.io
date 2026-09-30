@@ -70,14 +70,16 @@ svg.grafico{width:100%;height:auto;display:block}
 <script>
 const H = 3600000;
 function ahora(){ return Date.now(); }
-const PAQUETE = {"plano":{"tramos":[{"inicio":"2026-09-17T10:21:00.000Z","fin":"2026-09-17T13:21:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-01T16:15:00.000Z","fin":"2026-09-01T19:37:00.000Z","turno":3,"causa":"Cambio de turno"},{"inicio":"2026-09-01T22:15:00.000Z","fin":"2026-09-02T02:04:00.000Z","turno":4,"causa":"Cambio de turno"},{"inicio":"2026-09-04T16:05:00.000Z","fin":"2026-09-04T18:34:00.000Z","turno":3,"causa":"Cambio de turno"},{"inicio":"2026-09-04T22:13:00.000Z","fin":"2026-09-05T00:11:00.000Z","turno":4,"causa":"Cambio de turno"},{"inicio":"2026-09-07T10:11:00.000Z","fin":"2026-09-07T13:35:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-07T16:17:00.000Z","fin":"2026-09-07T19:50:00.000Z","turno":3,"causa":"Cambio de turno"},{"inicio":"2026-09-08T10:00:00.000Z","fin":"2026-09-08T14:10:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-08T04:10:00.000Z","fin":"2026-09-08T08:00:00.000Z","turno":1,"causa":"Cambio de turno"},{"inicio":"2026-09-09T10:13:00.000Z","fin":"2026-09-09T13:45:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-09T16:26:00.000Z","fin":"2026-09-09T19:49:00.000Z","turno":3,"causa":"Cambio de turno"},{"inicio":"2026-09-10T10:15:00.000Z","fin":"2026-09-10T13:32:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-10T16:12:00.000Z","fin":"2026-09-10T19:52:00.000Z","turno":3,"causa":"Cambio de turno"},{"inicio":"2026-09-11T15:52:00.000Z","fin":"2026-09-11T19:26:00.000Z","turno":3,"causa":"Cambio de turno"},{"inicio":"2026-09-14T16:40:00.000Z","fin":"2026-09-14T19:29:00.000Z","turno":3,"causa":"Cambio de turno"},{"inicio":"2026-09-15T10:14:00.000Z","fin":"2026-09-15T14:04:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-15T18:40:00.000Z","fin":"2026-09-15T19:52:00.000Z","turno":3,"causa":"Cambio de turno"},{"inicio":"2026-09-16T10:21:00.000Z","fin":"2026-09-16T13:56:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-16T16:27:00.000Z","fin":"2026-09-16T19:41:00.000Z","turno":3,"causa":"Cambio de turno"},{"inicio":"2026-09-18T10:46:00.000Z","fin":"2026-09-18T13:55:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-18T16:22:00.000Z","fin":"2026-09-18T19:13:00.000Z","turno":3,"causa":"Cambio de turno"},{"inicio":"2026-09-21T04:12:00.000Z","fin":"2026-09-21T07:02:00.000Z","turno":1,"causa":"Cambio de turno"},{"inicio":"2026-09-21T10:02:00.000Z","fin":"2026-09-21T13:54:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-22T04:44:00.000Z","fin":"2026-09-22T07:44:00.000Z","turno":1,"causa":"Cambio de turno"},{"inicio":"2026-09-22T10:22:00.000Z","fin":"2026-09-22T13:42:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-23T04:22:00.000Z","fin":"2026-09-23T07:50:00.000Z","turno":1,"causa":"Cambio de turno"},{"inicio":"2026-09-23T10:36:00.000Z","fin":"2026-09-23T13:55:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-24T04:09:00.000Z","fin":"2026-09-24T07:45:00.000Z","turno":1,"causa":"Cambio de turno"},{"inicio":"2026-09-24T10:06:00.000Z","fin":"2026-09-24T13:54:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-28T04:40:00.000Z","fin":"2026-09-28T07:52:00.000Z","turno":1,"causa":"Cambio de turno"},{"inicio":"2026-09-25T10:22:00.000Z","fin":"2026-09-25T13:43:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-28T10:11:00.000Z","fin":"2026-09-28T13:54:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-29T04:37:00.000Z","fin":"2026-09-29T07:41:00.000Z","turno":1,"causa":"Cambio de turno"},{"inicio":"2026-09-29T10:26:00.000Z","fin":"2026-09-29T13:50:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-30T04:35:00.000Z","fin":"2026-09-30T07:39:00.000Z","turno":1,"causa":"Cambio de turno"}],"generado":"2026-09-30T09:56:04.503Z"}};
+const PAQUETE = {"plano":{"tramos":[{"inicio":"2026-09-17T10:21:00.000Z","fin":"2026-09-17T13:21:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-01T16:15:00.000Z","fin":"2026-09-01T19:37:00.000Z","turno":3,"causa":"Cambio de turno"},{"inicio":"2026-09-01T22:15:00.000Z","fin":"2026-09-02T02:04:00.000Z","turno":4,"causa":"Cambio de turno"},{"inicio":"2026-09-04T16:05:00.000Z","fin":"2026-09-04T18:34:00.000Z","turno":3,"causa":"Cambio de turno"},{"inicio":"2026-09-04T22:13:00.000Z","fin":"2026-09-05T00:11:00.000Z","turno":4,"causa":"Cambio de turno"},{"inicio":"2026-09-07T10:11:00.000Z","fin":"2026-09-07T13:35:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-07T16:17:00.000Z","fin":"2026-09-07T19:50:00.000Z","turno":3,"causa":"Cambio de turno"},{"inicio":"2026-09-08T10:00:00.000Z","fin":"2026-09-08T14:10:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-08T04:10:00.000Z","fin":"2026-09-08T08:00:00.000Z","turno":1,"causa":"Cambio de turno"},{"inicio":"2026-09-09T10:13:00.000Z","fin":"2026-09-09T13:45:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-09T16:26:00.000Z","fin":"2026-09-09T19:49:00.000Z","turno":3,"causa":"Cambio de turno"},{"inicio":"2026-09-10T10:15:00.000Z","fin":"2026-09-10T13:32:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-10T16:12:00.000Z","fin":"2026-09-10T19:52:00.000Z","turno":3,"causa":"Cambio de turno"},{"inicio":"2026-09-11T15:52:00.000Z","fin":"2026-09-11T19:26:00.000Z","turno":3,"causa":"Cambio de turno"},{"inicio":"2026-09-14T16:40:00.000Z","fin":"2026-09-14T19:29:00.000Z","turno":3,"causa":"Cambio de turno"},{"inicio":"2026-09-15T10:14:00.000Z","fin":"2026-09-15T14:04:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-15T18:40:00.000Z","fin":"2026-09-15T19:52:00.000Z","turno":3,"causa":"Cambio de turno"},{"inicio":"2026-09-16T10:21:00.000Z","fin":"2026-09-16T13:56:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-16T16:27:00.000Z","fin":"2026-09-16T19:41:00.000Z","turno":3,"causa":"Cambio de turno"},{"inicio":"2026-09-18T10:46:00.000Z","fin":"2026-09-18T13:55:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-18T16:22:00.000Z","fin":"2026-09-18T19:13:00.000Z","turno":3,"causa":"Cambio de turno"},{"inicio":"2026-09-21T04:12:00.000Z","fin":"2026-09-21T07:02:00.000Z","turno":1,"causa":"Cambio de turno"},{"inicio":"2026-09-21T10:02:00.000Z","fin":"2026-09-21T13:54:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-22T04:44:00.000Z","fin":"2026-09-22T07:44:00.000Z","turno":1,"causa":"Cambio de turno"},{"inicio":"2026-09-22T10:22:00.000Z","fin":"2026-09-22T13:42:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-23T04:22:00.000Z","fin":"2026-09-23T07:50:00.000Z","turno":1,"causa":"Cambio de turno"},{"inicio":"2026-09-23T10:36:00.000Z","fin":"2026-09-23T13:55:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-24T04:09:00.000Z","fin":"2026-09-24T07:45:00.000Z","turno":1,"causa":"Cambio de turno"},{"inicio":"2026-09-24T10:06:00.000Z","fin":"2026-09-24T13:54:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-28T04:40:00.000Z","fin":"2026-09-28T07:52:00.000Z","turno":1,"causa":"Cambio de turno"},{"inicio":"2026-09-25T10:22:00.000Z","fin":"2026-09-25T13:43:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-28T10:11:00.000Z","fin":"2026-09-28T13:54:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-29T04:37:00.000Z","fin":"2026-09-29T07:41:00.000Z","turno":1,"causa":"Cambio de turno"},{"inicio":"2026-09-29T10:26:00.000Z","fin":"2026-09-29T13:50:00.000Z","turno":2,"causa":"Cambio de turno"},{"inicio":"2026-09-30T04:35:00.000Z","fin":"2026-09-30T07:39:00.000Z","turno":1,"causa":"Cambio de turno"}],"generado":"2026-09-30T10:13:38.510Z"}};
 let db = {tramos:[]};
 function clave(d){ return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
 function desdeClave(s){ const p=String(s).split("-"); return new Date(+p[0], +p[1]-1, +p[2]); }
 function fechaCorta(d){ return String(d.getDate()).padStart(2,"0")+"/"+String(d.getMonth()+1).padStart(2,"0"); }
 function fechaLarga(d){ return String(d.getDate()).padStart(2,"0")+"/"+String(d.getMonth()+1).padStart(2,"0")+"/"+d.getFullYear(); }
 function dec(n,d){ d=(d===undefined?1:d); return (isFinite(n)?n:0).toFixed(d).replace(".",","); }
-function hm(ms){ if(ms<0)ms=0; const t=Math.floor(ms/60000), h=Math.floor(t/60), m=t%60; return h+" h "+String(m).padStart(2,"0")+" min"; }
+function hm(ms){ if(ms<0)ms=0; const t=Math.round(ms/60000), h=Math.floor(t/60), m=t%60; return h+" h "+String(m).padStart(2,"0")+" min"; }
+function hc(h){ const t=Math.round(Math.max(0,h||0)*60); return Math.floor(t/60)+":"+String(t%60).padStart(2,"0"); }
+function topeHoras(max){ return Math.max(4, Math.ceil(max/4)*4); }
 function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
 function repartir(ini, fin){
   const out = []; let cur = new Date(ini), v = 0;
@@ -131,7 +133,8 @@ function ejes(s, ml, mr, mt, mb, W, Hh, max, dig){
 function lineaCategorias(datos, unidad){
   if(!datos.length) return '<p class="vacio">Sin datos en el período.</p>';
   const W=900, Hh=280, ml=48, mr=14, mt=14, mb=44;
-  const max = Math.max.apply(null, datos.map(d=>d.valor).concat([0.1]))*1.1;
+  let max = Math.max.apply(null, datos.map(d=>d.valor).concat([0.1]))*1.1;
+  if(unidad === "h") max = topeHoras(max);
   const n = datos.length;
   const X = i => n===1 ? (ml+(W-ml-mr)/2) : ml+(i/(n-1))*(W-ml-mr);
   const Y = v => Hh-mb-(v/max)*(Hh-mb-mt);
@@ -143,7 +146,7 @@ function lineaCategorias(datos, unidad){
   s.push('<path d="'+area+'" fill="#2F4858" opacity="0.08"/>');
   const paso = Math.max(1, Math.ceil(n/22));
   datos.forEach((d,i) => {
-    if(n <= 60) s.push('<circle cx="'+X(i)+'" cy="'+Y(d.valor)+'" r="3" fill="#2F4858"><title>'+esc(d.label)+": "+dec(d.valor,2)+" "+unidad+"</title></circle>");
+    if(n <= 60) s.push('<circle cx="'+X(i)+'" cy="'+Y(d.valor)+'" r="3" fill="#2F4858"><title>'+esc(d.label)+": "+(unidad==="h" ? hc(d.valor) : dec(d.valor,2))+" "+unidad+"</title></circle>");
     if(i%paso===0) s.push('<text x="'+X(i)+'" y="'+(Hh-mb+17)+'" text-anchor="middle" font-size="11" fill="#5A5E64">'+esc(d.label)+"</text>");
   });
   s.push('<line x1="'+ml+'" y1="'+(Hh-mb)+'" x2="'+(W-mr)+'" y2="'+(Hh-mb)+'" stroke="#C9C6BE"/></svg>');
@@ -152,14 +155,14 @@ function lineaCategorias(datos, unidad){
 function barras(datos){
   if(!datos.length) return '<p class="vacio">Sin datos en el período.</p>';
   const W=800, Hh=260, ml=48, mr=12, mt=14, mb=46;
-  const max = Math.max.apply(null, datos.map(d=>d.valor).concat([0.1]));
+  const max = topeHoras(Math.max.apply(null, datos.map(d=>d.valor).concat([0.1])));
   const Y = v => Hh-mb-(v/max)*(Hh-mb-mt);
   const ancho = (W-ml-mr)/datos.length;
   const s = ['<svg class="grafico" viewBox="0 0 '+W+" "+Hh+'" role="img">'];
   ejes(s, ml, mr, mt, mb, W, Hh, max, max<5?1:0);
   datos.forEach((d,i) => {
     const x = ml+i*ancho, y = Y(d.valor);
-    s.push('<rect x="'+(x+ancho*0.16)+'" y="'+y+'" width="'+(ancho*0.68)+'" height="'+Math.max(Hh-mb-y,0)+'" fill="#2F4858"><title>'+esc(d.label)+": "+dec(d.valor,2)+' h</title></rect>');
+    s.push('<rect x="'+(x+ancho*0.16)+'" y="'+y+'" width="'+(ancho*0.68)+'" height="'+Math.max(Hh-mb-y,0)+'" fill="#2F4858"><title>'+esc(d.label)+": "+hc(d.valor)+' h</title></rect>');
     s.push('<text x="'+(x+ancho/2)+'" y="'+(Hh-mb+16)+'" text-anchor="middle" font-size="11" fill="#5A5E64">'+esc(d.label)+"</text>");
     if(d.extra) s.push('<text x="'+(x+ancho/2)+'" y="'+(Hh-mb+31)+'" text-anchor="middle" font-size="10" fill="#8A8D92">'+esc(d.extra)+"</text>");
   });
@@ -174,8 +177,8 @@ function barrasHoriz(datos){
   datos.forEach((d,i) => {
     const y = i*fila+8, w = (d.valor/max)*(W-ml-mr);
     s.push('<text x="'+(ml-8)+'" y="'+(y+14)+'" text-anchor="end" font-size="12" fill="#16181B">'+esc(d.label)+"</text>");
-    s.push('<rect x="'+ml+'" y="'+y+'" width="'+w+'" height="18" fill="#B3382C" opacity="0.85"><title>'+esc(d.label)+": "+dec(d.valor,1)+' h</title></rect>');
-    s.push('<text x="'+(ml+w+7)+'" y="'+(y+14)+'" font-size="12" fill="#5A5E64">'+dec(d.valor,1)+" h · "+d.n+"</text>");
+    s.push('<rect x="'+ml+'" y="'+y+'" width="'+w+'" height="18" fill="#B3382C" opacity="0.85"><title>'+esc(d.label)+": "+hc(d.valor)+' h</title></rect>');
+    s.push('<text x="'+(ml+w+7)+'" y="'+(y+14)+'" font-size="12" fill="#5A5E64">'+hc(d.valor)+" h · "+d.n+"</text>");
   });
   s.push("</svg>");
   return s.join("");
@@ -204,12 +207,12 @@ function pintar(){
   const media = r.paradas.length ? msP/r.paradas.length : 0;
   const dias = Object.keys(r.porDia).length || 1;
   const k = (v,l) => '<div class="kpi"><div class="v">'+v+'</div><div class="r">'+l+"</div></div>";
-  $("kpis").innerHTML = k(dec(r.horas,1)+" h","Horas de marcha")
+  $("kpis").innerHTML = k(hm(r.horas*H),"Horas de marcha")
     + k(dec(disp,1)+" %","Disponibilidad del período")
-    + k(dec(r.horas/dias,1)+" h","Promedio por día con marcha")
+    + k(hm(r.horas/dias*H),"Promedio por día con marcha")
     + k(r.paradas.length,"Paradas registradas")
     + k(hm(media),"Duración media de parada")
-    + k(dec(msP/H,1)+" h","Horas perdidas por paradas");
+    + k(hm(msP),"Horas perdidas por paradas");
   const dd = Object.keys(r.porDia).sort();
   let serie;
   if(dd.length > 70){
